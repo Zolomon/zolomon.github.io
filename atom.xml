@@ -4,7 +4,7 @@
   <title><![CDATA[(Neuron => String) => Ethernet]]></title>
   <link href="http://Zolomon.github.io/atom.xml" rel="self"/>
   <link href="http://Zolomon.github.io/"/>
-  <updated>2013-08-13T08:49:51+02:00</updated>
+  <updated>2013-08-13T08:54:42+02:00</updated>
   <id>http://Zolomon.github.io/</id>
   <author>
     <name><![CDATA[Bengt Ericsson]]></name>
@@ -55,69 +55,6 @@ What are they? What problems do they solve? These questions are easily answered 
 <p>It begins by explaining coordinate systems, positions and how to create visual animation but stepping through time. Daniel, the author, then continues to build upon this basic foundation by creating abstractions; like two-dimensional vectors and how you can utilize them for your benefit.</p>
 
 <p>The chapter on forces is incredibly valuable to any game developer or creative coder alike!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Writing a MUD Client]]></title>
-    <link href="http://Zolomon.github.io/blog/2012/06/10/writing-a-mud-client/"/>
-    <updated>2012-06-10T00:00:00+02:00</updated>
-    <id>http://Zolomon.github.io/blog/2012/06/10/writing-a-mud-client</id>
-    <content type="html"><![CDATA[<h1>Writing a MUD Client</h1>
-
-<p>I am commiting myself to fix the void of MUD Clients.<br/>
-Here follows my current research into developing the MUD Client I wish
-I had.</p>
-
-<h2>General links</h2>
-
-<ul>
-<li><a href="http://posted-stuff.blogspot.se/2010/03/telnet-and-mud-server-development.html">Telnet and MUD Server Development</a></li>
-<li><a href="http://cryosphere.net/mud-protocol.html">Mud Protocol</a></li>
-<li><a href="http://www.keyboardmods.com/2011/10/kinect-speech-recognition-in-linux.html">Kinect Speech Recognition in Linux</a></li>
-</ul>
-
-
-<h2>Protocols</h2>
-
-<ul>
-<li><a href="http://www.smaugmuds.org/mccp/">MCCP</a></li>
-<li><a href="http://www.moo.mud.org/mcp/">MCP</a></li>
-<li><a href="http://www.zuggsoft.com/zmud/msp.htm">MSP</a></li>
-<li><a href="http://www.zuggsoft.com/zmud/mxp.htm">MXP</a></li>
-<li><a href="http://en.wikipedia.org/wiki/Xterm">Xterm: 256 colours</a></li>
-<li><a href="http://en.wikipedia.org/wiki/ANSI_escape_code">ANSI escape codes</a></li>
-<li><a href="http://www.faqs.org/rfcs/rfc885.html">Telnet: End of Record Option</a></li>
-<li><a href="http://www.faqs.org/rfcs/rfc1073.html">Telnet: Window Size Option</a></li>
-<li><a href="http://mud.stack.nl/intermud/">Intermud Communication</a></li>
-<li><a href="http://tintin.sourceforge.net/msdp/">MSDP</a></li>
-<li><a href="http://tintin.sourceforge.net/mssp/">MSSP</a></li>
-<li><a href="http://tintin.sourceforge.net/mtts/">MTTS</a></li>
-<li><a href="http://en.wikipedia.org/wiki/IPv6">IPv6</a></li>
-<li><a href="">Character Mode</a></li>
-<li><a href="">Go Ahead</a></li>
-<li><a href="">MudMaster Chat</a></li>
-<li><a href="">TELNET</a></li>
-<li><a href="">VT100</a></li>
-</ul>
-
-
-<h2>Inspiration &amp;&amp; Existing Clients</h2>
-
-<p><a href="https://github.com/dannytatom/muddy">Muddy: HTML5</a>
-<a href="http://en.wikipedia.org/wiki/Comparison_of_MUD_clients">Comparison of MUD Clients</a></p>
-
-<h2>Ideas</h2>
-
-<ul>
-<li>Macro support: Any global key combination should be set.</li>
-<li>Trigger support: Write triggers/events on regex matches</li>
-<li>Timer support: Run a script/command on a timer<br/>
-<em>**Timers should support creation of one-shot timers with random
-</em>timespan</li>
-<li></li>
-</ul>
-
 ]]></content>
   </entry>
   
