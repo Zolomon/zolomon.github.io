@@ -1,0 +1,33 @@
+---
+title: Data-Driven Design
+layout: default
+category: 
+published: false
+tags:
+- game programming gems
+- gamedev
+---
+<p>So I just read the first chapter in the first <a href="#test">Game Programming Gems</a> book that I just received, about the philosophy behind data-driven design.</p>
+
+<p>
+  It's very easy to comprehend the idea of it, but just the opposite in difficulty in terms of realization.
+  The purpose is to decouple <i>logic</i> and <i>data</i> through the use of different file formats and scripts.
+</p>
+
+<p>
+  The motto is <q>Hard-Code Nothing</q> which basically means that you should expose all your <i>data</i> and only enough of your <i>logic</i>.
+  The purpose is to make the job easier for everyone, and allow maximum flexibility by allowing everything to be changed through the use of text files and scripts.
+</p>
+
+<p>
+  Complex <i>logic</i>, like artificial intelligence, should not be exposed unless you're allowing user customization or have a team who works sepparately with AI.
+  You should also adhere to the DRY <q>Don't Repeat Yourself</q> methodology and keep things in only one place so you only have one place of change.
+  Everything else should keep a reference to this global definition of data - think of it as Plato's Theory of Forms.
+  You have one single place of all forms, that can be based on other forms, and then copies/references of it in the game world as instances. 
+</p>
+
+<p>
+  Expose assert <i>logic</i> like <code>IsPlayerLifeInGreaterThanPercentage(50)</code> to the designer and similar functionallity to allow
+  scripting of quests and the like. 
+</p>
+
