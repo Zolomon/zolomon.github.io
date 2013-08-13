@@ -1,0 +1,938 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>GameDevAISchemeLISPFP...  | (Neuron => String) => Ethernet</title>
+
+<meta name="author" content="Bengt Ericsson"> 
+
+<meta name="description" content="Foreword(xi) Preface(xv) About the Cover Image(xix) Contributor Bios(xxi) SECTION 1 GENERAL PROGRAMMING (1) Introduction(3) 1.1Context-Sensitive &hellip;"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="(Neuron => String) => Ethernet" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script>
+	
+</head>
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">(Neuron => String) => Ethernet</a></h1>
+<h4>GameDevAISchemeLISPFP...</h4>
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:Zolomon.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2011/05/28/game-programming-gems-5/">
+		
+			Game Programming Gems 5, Table of Contents</a>
+	</h2>
+	<div class="entry-content">
+		<table>
+  <tr><td colspan="2">Foreword</td><td>(xi)</td></tr>
+  <tr><td colspan="2">Preface</td><td>(xv)</td></tr>  
+  <tr><td colspan="2">About the Cover Image</td><td>(xix)</td></tr>
+  <tr><td colspan="2">Contributor Bios</td><td>(xxi)</td></tr>
+</table>
+
+<h2> SECTION 1 GENERAL PROGRAMMING (1)</h2>
+<table>  
+  <tr><td colspan="2">Introduction</td><td>(3)</td></tr>
+  <tr><td>1.1</td><td>Context-Sensitive HUDs for Editors</td><td>(5)</td></tr>
+  <tr><td>1.2</td><td>Parsing Text Data in Games</td><td>(17)</td></tr>
+  <tr><td>1.3</td><td>Component Based Object Management</td><td>(25)</td></tr>
+  <tr><td>1.4</td><td>Using Templates for Reflection in C++</td><td>(39)</td></tr>
+  <tr><td>1.5</td><td>Sphere Trees for Speedy BSPs</td><td>(55)</td></tr>
+  <tr><td>1.6</td><td>Improved Frustum Culling</td><td>(65)</td></tr>
+  <tr><td>1.7</td><td>Generic Pager</td><td>(79)</td></tr>
+  <tr><td>1.8</td><td>Large-Scale Stack-Based State Machines</td><td>(93)</td></tr>
+  <tr><td>1.9</td><td>CSG Construction Using BSP Trees</td><td>(103)</td></tr>
+  <tr><td>1.10</td><td>Building Lua into Games</td><td>(115)</td></tr>
+  <tr><td>1.11</td><td>Improving Freelists with Policy Based Design</td><td>(129)</td></tr>
+  <tr><td>1.12</td><td>A Real-Time Remote Debug Message Logger</td><td>(143)</td></tr>
+  <tr><td>1.13</td><td>A Transparent Class Saving and Loading Trick</td><td>(149)</td></tr>
+  <tr><td>1.14</td><td>An Effective Cache-Oblivious Implementation of the ABT Tree</td><td>(159)</td></tr>
+  <tr><td>1.15</td><td>Visual Design of State Machines</td><td>(169)</td></tr>
+  <tr><td>1.16</td><td>A Generic Component Library</td><td>(177)</td></tr>
+  <tr><td>1.17</td><td>Choose Your Path-A Menu System</td><td>(189)</td></tr>
+</table>
+
+<h2> SECTION 2 MATHEMATICS (197)</h2>
+<table>
+  
+  <tr><td colspan="2">Introduction</td><td>(199)</td></tr>
+  <tr><td>2.1</td><td>Using Geometric Algebra for Computer Graphics</td><td>(201)</td></tr>
+  <tr><td>2.2</td><td>Minimal Acceleration Hermite Curves</td><td>(225)</td></tr>
+  <tr><td>2.3</td><td>Spline-Based Time Control for Animation</td><td>(233)</td></tr>
+  <tr><td>2.4</td><td>Faster Quaternion Interpolation Using Approximations</td><td>(247)</td></tr>
+  <tr><td>2.5</td><td>Minimax Numerical Approximation</td><td>(269)</td></tr>
+  <tr><td>2.6</td><td>Oblique View Frustums for Mirrors and Portals</td><td>(281)</td></tr>
+</table>
+
+<h2> SECTION 3 ARTIFICIAL INTELLIGENCE (295)</h2>
+<table>
+  
+  <tr><td colspan="2">Introduction</td><td>(297)</td></tr>
+  <tr><td>3.1</td><td>Automatic Cover Finding with Navigation Meshes</td><td>(299)</td></tr>
+  <tr><td>3.2</td><td>Fast Target Ranking Using an Artificial Potential Field</td><td>(307)</td></tr>
+  <tr><td>3.3</td><td>Using Lanchester Attrition Models to Predict the Results of Combat</td><td>(317)</td></tr>
+  <tr><td>3.4</td><td>Implementing Practical Planning for Game AI</td><td>(329)</td></tr>
+  <tr><td>3.5</td><td>Optimizing a Decision Tree Query Algorithm for Multithreaded Architectures</td><td>(345)</td></tr>
+  <tr><td>3.6</td><td>Parallel AI Development with PVM</td><td>(353)</td></tr>
+  <tr><td>3.7</td><td>Beyond A</td><td> (367)</td></tr>
+  <tr><td>3.8</td><td>Advanced Pathfinding with Minimal Replanning Cost: Dynamic A Star (D*)</td><td>(383)</td></tr>
+</table>
+
+<h2> SECTION 4 PHYSICS (391)</h2>
+<table>
+  
+  <tr><td colspan="2">Introduction</td><td>(393)</td></tr>
+  <tr><td>4.1</td><td>Back of the Envelope Aerodynamics for Game Physics</td><td>(395)</td></tr>
+  <tr><td>4.2</td><td>Dynamic Grass Simulation and Other Natural Effects</td><td>(411)</td></tr>
+  <tr><td>4.3</td><td>Realistic Cloth Animation Using the Mass-Spring Model</td><td>(421)</td></tr>
+  <tr><td>4.4</td><td>Practical Animation of Soft Bodies for Game Development: The Pressurized Soft-Body Model</td><td>(435)</td></tr>
+  <tr><td>4.5</td><td>Adding Life to Ragdoll Simulation Using Feedback Control Systems</td><td>(449)</td></tr>
+  <tr><td>4.6</td><td>Designing a Prescripted Physics System</td><td>(457)</td></tr>
+  <tr><td>4.7</td><td>Prescripted Physics: Techniques and Applications</td><td>(473)</td></tr>
+  <tr><td>4.8</td><td>Realistic Camera Movement in a 3D Car Simulator</td><td>(483)</td></tr>
+</table>
+
+<h2> SECTION 5 GRAPHICS (495)</h2>
+<table>
+  
+  <tr><td colspan="2">Introduction</td><td>(497)</td></tr>
+  <tr><td>5.1</td><td>Realistic Cloud Rendering on Modern GPUs</td><td>(499)</td></tr>
+  <tr><td>5.2</td><td>Let It Snow, Let It Snow, Let It Snow (and Rain</td><td> (507)</td></tr>
+  <tr><td>5.3</td><td>Widgets: Rendering Fast and Persistent Foliage</td><td>(515)</td></tr>
+  <tr><td>5.4</td><td>2.5 Dimensional Impostors for Realistic Trees and Forests</td><td>(527)</td></tr>
+  <tr><td>5.5</td><td>Gridless Controllable Fire</td><td>(539)</td></tr>
+  <tr><td>5.6</td><td>Powerful Explosion Effects Using Billboard Particles</td><td>(551)</td></tr>
+  <tr><td>5.7</td><td>A Simple Method for Rendering Gemstones</td><td>(561)</td></tr>
+  <tr><td>5.8</td><td>Volumetric Post-Processing</td><td>(571)</td></tr>
+  <tr><td>5.9</td><td>Procedural Level Generation</td><td>(579)</td></tr>
+  <tr><td>5.10</td><td>Recombinant Shaders</td><td>(589)</td></tr>
+</table>
+
+<h2> SECTION 6 NETWORK AND MULTIPLAYER (599)</h2>
+<table>
+  
+  <tr><td colspan="2">Introduction</td><td>(601)</td></tr>
+  <tr><td>6.1</td><td>Keeping a Massively Multiplayer Online Game Massive, Online, and Persistent</td><td>(603)</td></tr>
+  <tr><td>6.2</td><td>Implementing a Seamless World Server</td><td>(611)</td></tr>
+  <tr><td>6.3</td><td>Designing a Vulgarity Filtering System</td><td>(621)</td></tr>
+  <tr><td>6.4</td><td>Fast and Efficient Implementation of a Remote Procedure Call System</td><td>(627)</td></tr>
+  <tr><td>6.5</td><td>Overcoming Network Address Translation in Peer-to-Peer Communications</td><td>(643)</td></tr>
+  <tr><td>6.6</td><td>A Reliable Messaging Protocol</td><td>(665)</td></tr>
+  <tr><td>6.7</td><td>Safe Random Number Systems</td><td>(673)</td></tr>
+  <tr><td>6.8</td><td>Secure by Design</td><td>(681)</td></tr>
+</table>
+
+<h2> SECTION 7 AUDIO (693)</h2>
+<table>  
+  <tr><td colspan="2">Introduction</td><td>(695)</td></tr>
+  <tr><td>7.1</td><td>Multithreaded Audio Programming Techniques</td><td>(697)</td></tr>
+  <tr><td>7.2</td><td>Sound Management by Group</td><td>(713)</td></tr>
+  <tr><td>7.3</td><td>Using 3D Surfaces as Audio Emitters</td><td>(721)</td></tr>
+  <tr><td>7.4</td><td>Fast Environmental Reverb Based on Feedback Delay Networks</td><td>(729)</td></tr>
+  <tr><td>7.5</td><td>Introduction to Single-Speaker Speech Recognition</td><td>(741)</td></tr>
+</table>
+<table>
+  <tr><td colspan="2">About the CD-ROM</td><td>(751)</td></tr>
+  <tr><td colspan="2">Index</td><td>(753)</td></tr>
+</table>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-28T00:00:00+02:00" pubdate data-updated="true">May 28<span>th</span>, 2011</time></div>
+	<div class="tags">
+
+</div>
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2011/05/28/game-programming-gems-4/">
+		
+			Game Programming Gems 4, Table of Contents</a>
+	</h2>
+	<div class="entry-content">
+		<table>
+  <tr><td colspan="2">Foreword</td><td>(xi)</td></tr>
+  <tr><td colspan="2">Preface</td><td>(xv)</td></tr>
+  <tr><td colspan="2">Acknowledgments</td><td>(xvii)</td></tr>  
+  <tr><td colspan="2">About the Cover Image</td><td>(xix)</td></tr>  
+  <tr><td colspan="2">Contributor Bios</td><td>(xxi)</td></tr>
+</table>
+
+
+<h2>SECTION 1 GENERAL PROGRAMMING (1)</h2>
+<table>  
+  <tr><td colspan="2">Introduction</td><td>(3)</td></tr>  
+
+  <tr><td>1.1</td><td>The Science of Debugging Games</td><td>(5)</td></tr>
+  <tr><td>1.2</td><td>An HTML-Based Logging and Debugging System</td><td>(19)</td></tr>
+  <tr><td>1.3</td><td>The Clock: Keeping Your Finger on the Pulse of the Game</td><td>(27)</td></tr>
+  <tr><td>1.4</td><td>Designing and Maintaining Large Cross-Platform Libraries</td><td>(35)</td></tr>
+  <tr><td>1.5</td><td>Fight Memory Fragmentation with Templated Freelists</td><td>(43)</td></tr>
+  <tr><td>1.6</td><td>A Generic Tree Container in C++</td><td>(51)</td></tr>
+  <tr><td>1.7</td><td>The Beauty of Weak References and Null Objects</td><td>(61)</td></tr>
+  <tr><td>1.8</td><td>A System for Managing Game Entities</td><td>(69)</td></tr>
+  <tr><td>1.9</td><td>Address-Space Managed Dynamic Arrays for Windows and the Xbox</td><td>(85)</td></tr>
+  <tr><td>1.10</td><td>Critically Damped Ease-In/Ease-Out Smoothing</td><td>(95)</td></tr>
+  <tr><td>1.11</td><td>A Flexible, On-the-Fly Object Manager</td><td>(103)</td></tr>
+  <tr><td>1.12</td><td>Using Custom RTTI Properties to Stream and Edit Objects</td><td>(111)</td></tr>
+  <tr><td>1.13</td><td>Using XML without Sacrificing Speed</td><td>(125)</td></tr>
+</table>
+
+<h2>SECTION 2 MATHEMATICS (137)</h2>
+<table>  
+  <tr><td colspan="2">Introduction</td><td>(139)</td></tr>
+  <tr><td>2.1</td><td>Zobrist Hash Using the Mersenne Twister</td><td>(141)</td></tr>
+  <tr><td>2.2</td><td>Extracting Frustum and Camera Information</td><td>(147)</td></tr>
+  <tr><td>2.3</td><td>Solving Accuracy Problems in Large World Coordinates</td><td>(157)</td></tr>
+  <tr><td>2.4</td><td>Nonuniform Splines</td><td>(171)</td></tr>
+  <tr><td>2.5</td><td>Using the Covariance Matrix for Better-Fitting Bounding Objects</td><td>(183)</td></tr>
+  <tr><td>2.6</td><td>The Jacobian Transpose Method for Inverse Kinematics</td><td>(193)</td></tr>
+</table>
+
+<h2>SECTION 3 PHYSICS (205)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td><td>(207)</td></tr>
+  <tr><td>3.1</td><td>Ten Fingers of Death: Algorithms for Combat Killing</td><td>(209)</td></tr>
+  <tr><td>3.2</td><td>Vehicle Physics Simulation for CPU-Limited Systems</td><td>(221)</td></tr>
+  <tr><td>3.3</td><td>Writing a Verlet-Based Physics Engine</td><td>(231)</td></tr>
+  <tr><td>3.4</td><td>Constraints in Rigid Body Dynamics</td><td>(241)</td></tr>
+  <tr><td>3.5</td><td>Fast Contact Reduction for Dynamics Simulation</td><td>(253)</td></tr>
+  <tr><td>3.6</td><td>Interactive Water Surfaces</td><td>(265)</td></tr>
+  <tr><td>3.7</td><td>Fast Deformations with Multilayered Physics</td><td>(275)</td></tr>
+  <tr><td>3.8</td><td>Modal Analysis for Fast, Stable Deformation</td><td>(287)</td></tr>
+</table>
+
+<h2>SECTION 4 ARTIFICIAL INTELLIGENCE (299)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td><td>(301)</td></tr>
+  <tr><td>4.1</td><td>Third-Person Camera Navigation</td><td>(303)</td></tr>
+  <tr><td>4.2</td><td>Narrative Combat: Using AI to Enhance Tension in an Action Game</td><td>315</td></tr>
+  <tr><td>4.3</td><td>NPC Decision Making: Dealing with Randomness</td><td>(325)</td></tr>
+  <tr><td>4.4</td><td>An Object-Oriented Utility-Based Decision Architecture</td><td>(337)</td></tr>
+  <tr><td>4.5</td><td>A Distributed-Reasoning Voting Architecture</td><td>(345)</td></tr>
+  <tr><td>4.6</td><td>Attractors and Repulsors</td><td>(355)</td></tr>
+  <tr><td>4.7</td><td>Advanced Wall Building for RTS Games</td><td>(365)</td></tr>
+  <tr><td>4.8</td><td>Artificial Neural Networks on Programmable Graphics Hardware</td><td>(373)</td></tr>
+</table>
+
+<h2>SECTION 5 GRAPHICS (379)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td><td>(381)</td></tr>
+  <tr><td>5.1</td><td>Poster Quality Screenshots</td><td>(383)</td></tr>
+  <tr><td>5.2</td><td>GPU Shadow Volume Construction for Nonclosed Meshes</td><td>(393)</td></tr>
+  <tr><td>5.3</td><td>Perspective Shadow Maps</td><td>(399)</td></tr>
+  <tr><td>5.4</td><td>Combined Depth and ID-Based Shadow Buffers</td><td>(411)</td></tr>
+  <tr><td>5.5</td><td>Carving Static Shadows into Geometry</td><td>(427)</td></tr>
+  <tr><td>5.8</td><td>Techniques to Apply Team Colors to 3D Models</td><td>(451)</td></tr>
+  <tr><td>5.9</td><td>Fast Sepia Tone Conversion</td><td>(461)</td></tr>
+  <tr><td>5.10</td><td>Dynamic Gamma Using Sampled Scene Luminance</td><td>(465)</td></tr>
+  <tr><td>5.11</td><td>Heat and Haze Post-Processing Effects</td><td>(477)</td></tr>
+  <tr><td>5.13</td><td>Motion Capture Data Compression</td><td>(497)</td></tr>
+  <tr><td>5.14</td><td>Fast Collision Detection for 3D Bones-Based Articulated Characters</td><td>(503)</td></tr>
+  <tr><td>5.15</td><td>Terrain Occlusion Culling with Horizons</td><td>(515)</td></tr>
+</table>
+
+<h2>SECTION 6 NETWORK AND MULTIPLAYER (529)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td><td>(531)</td></tr>
+  <tr><td>6.1</td><td>General Lobby Design and Development</td><td>(533)</td></tr>
+  <tr><td>6.2</td><td>Thousands of Clients per Server</td><td>(541)</td></tr>
+  <tr><td>6.3</td><td>Efficient MMP Game State Storage</td><td>(555)</td></tr>
+  <tr><td>6.4</td><td>Practical Application of Parallel-State Machines in a Client-Server Environment</td><td>(563)</td></tr>
+  <tr><td>6.5</td><td>Bit Packing: A Network Compression Technique</td><td>(571)</td></tr>
+  <tr><td>6.6</td><td>Time and Consistency Management for Multiserver-Based MMORPGs</td><td>(579)</td></tr>
+</table>
+
+<h2>SECTION 7 AUDIO (591)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td><td>(593)</td></tr>
+  <tr><td>7.1</td><td>A Brief Introduction to OpenAL</td><td>(595)</td></tr>
+  <tr><td>7.2</td><td>A Simple Real-Time Lip-Synching System</td><td>(607)</td></tr>
+  <tr><td>7.3</td><td>Dynamic Variables and Audio Programming</td><td>(613)</td></tr>
+  <tr><td>7.4</td><td>Creating an Audio Scripting System</td><td>(621)</td></tr>
+  <tr><td>7.5</td><td>Implementing an Environmental Audio Solution Using EAX and ZoomFX</td><td>(633)</td></tr>
+  <tr><td>7.6</td><td>Controlling Real-Time Sound Synthesis from Game Physics</td><td>(649)</td></tr>
+</table>
+<table>
+  <tr><td colspan="2">APPENDIX: ABOUT THE CD-ROM</td><td>(657)</td>
+  <tr><td colspan="2">INDEX</td> <td>(659)</td></tr>
+</table>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-28T00:00:00+02:00" pubdate data-updated="true">May 28<span>th</span>, 2011</time></div>
+	<div class="tags">
+
+</div>
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2011/05/28/game-programming-gems-3/">
+		
+			Game Programming Gems 3, Table of Contents</a>
+	</h2>
+	<div class="entry-content">
+		<table>
+  <tr><td colspan="2">Foreword</td><td>(xi)</td></tr>
+  <tr><td colspan="2">Preface</td><td> (xv)</td></tr>
+  <tr><td colspan="2">Acknowledgments</td><td> (xix)</td></tr>
+  <tr><td colspan="2">About the Cover Image</td><td> (xxi)</td></tr>
+  <tr><td colspan="2">Contributor Bios</td><td> (xxiii)</td>
+</table>
+
+<h2>SECTION 1 GENERAL PROGRAMMING (1)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td> <td>(3)</td></tr> 
+  <tr><td>1.1</td><td>Scheduling Game Events</td><td>(5)</td></tr>
+  <tr><td>1.2</td><td>An Object-Composition Game Framework</td><td>(15)</td></tr>
+  <tr><td>1.3</td><td>Finding Redeeming Value in C-Style Macros</td><td>(26)</td></tr>
+  <tr><td>1.4</td><td>Platform-Independent, Function-Binding Code Generator</td><td>(38)</td></tr>
+  <tr><td>1.5</td><td>Handle-Based Smart Pointers</td><td>(44)</td></tr>
+  <tr><td>1.6</td><td>Custom STL Allocators</td><td>(49)</td></tr>
+  <tr><td>1.7</td><td>Save Me Now</td><td> (59)</td></tr>
+  <tr><td>1.8</td><td>Autolists Design Pattern</td><td>(64)</td></tr>
+  <tr><td>1.9</td><td>Floating-Point Exception Handling</td><td>(69)</td></tr>
+  <tr><td>1.10</td><td>Programming a Game Design-Compliant Engine Using UML</td><td>(73)</td></tr>
+  <tr><td>1.11</td><td>Using Lex and Yacc To Parse Custom Data Files</td><td>(83)</td></tr>
+  <tr><td>1.12</td><td>Developing Games for a World Market</td><td>(92)</td></tr>
+  <tr><td>1.13</td><td>Real-Time Input and UI in 3D Games</td><td>(109)</td></tr>
+  <tr><td>1.14</td><td>Natural Selection: The Evolution of Pie Menus</td><td>(117)</td></tr>
+  <tr><td>1.15</td><td>Lightweight, Policy-Based Logging</td><td>(129)</td></tr>
+  <tr><td>1.16</td><td>Journaling Services</td><td>(136)</td></tr>
+  <tr><td>1.17</td><td>Real-Time Hierarchical Profiling</td><td>(146)</td></tr>
+</table>
+
+<h2>SECTION 2 MATHEMATICS (153)  </h2>
+<table>
+  <tr><td colspan="2">Introduction</td> <td>(155)</td></tr>
+  <tr><td>2.1</td><td>Fast Base-2 Functions for Logarithms and Random Number Generation</td><td>(157)</td></tr>
+  <tr><td>2.2</td><td>Using Vector Fractions for Exact Geometry</td><td>(160)</td></tr>
+  <tr><td>2.3</td><td>More Approximations to Trigonometric Functions</td><td>(170)</td></tr>
+  <tr><td>2.4</td><td>Quaternion Compression</td><td>(187)</td></tr>
+  <tr><td>2.5</td><td>Constrained Inverse Kinematics</td><td>(192)</td></tr>
+  <tr><td>2.6</td><td>Cellular Automata for Physical Modeling</td><td>(200)</td></tr>
+  <tr><td>2.7</td><td>Coping with Friction in Dynamic Simulations</td><td>(215)</td></tr>
+</table>
+
+<h2>SECTION 3 ARTIFICIAL INTELLIGENCE (227)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td><td>(229)</td></tr>  
+  <tr><td>3.1</td><td>Optimized Machine Learning with GoCap</td><td>(231)</td></tr>
+  <tr><td>3.2</td><td>Area Navigation: Expanding the Path-Finding Paradigm</td><td>(240)</td></tr>
+  <tr><td>3.3</td><td>Function Pointer-Based, Embedded Finite-State Machines</td><td>(256)</td></tr>
+  <tr><td>3.4</td><td>Terrain Analysis in an RTS-The Hidden Giant</td><td>(268)</td></tr>
+  <tr><td>3.5</td><td>An Extensible Trigger System for AI Agents, Objects, and Quests</td><td>(285)</td></tr>
+  <tr><td>3.6</td><td>Tactical Path-Finding with A</td><td> (294)</td></tr>
+  <tr><td>3.7</td><td>A Fast Approach to Navigation Meshes</td><td>(307)</td></tr>
+  <tr><td>3.8</td><td>Choosing a Relationship Between Path-Finding and Collision</td><td>(321)</td></tr>
+</table>
+
+<h2>SECTION 4 GRAPHICS (333)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td><td>(335)</td></tr>
+  <tr><td>4.1</td><td>T-Junction Elimination and Retriangulation</td><td>(338)</td></tr>
+  <tr><td>4.2</td><td>Fast Heightfield Normal Calculation</td><td>(344)</td></tr>
+  <tr><td>4.3</td><td>Fast Patch Normals</td><td>(349)</td></tr>
+  <tr><td>4.4</td><td>Fast and Simple Occlusion Culling</td><td>(353)</td></tr>
+  <tr><td>4.5</td><td>Triangle Strip Creation, Optimizations, and Rendering</td><td>(359)</td></tr>
+  <tr><td>4.6</td><td>Computing Optimized Shadow Volumes for Complex Data Sets</td><td>(367)</td></tr>
+  <tr><td>4.7</td><td>Subdivision Surfaces for Character Animation</td><td>(372)</td></tr>
+  <tr><td>4.8</td><td>Improved Deformation of Bones</td><td>(384)</td></tr>
+  <tr><td>4.9</td><td>A Framework for Realistic Character Locomotion</td><td>(394)</td></tr>
+  <tr><td>4.10</td><td>A Programmable Vertex Shader Compiler</td><td>(404)</td></tr>
+  <tr><td>4.11</td><td>Billboard Beams</td><td>(413)</td></tr>
+  <tr><td>4.12</td><td>3D Tricks for Isometric Engines</td><td>(417)</td></tr>
+  <tr><td>4.13</td><td>Curvature Simulation Using Normal Maps</td><td>(424)</td></tr>
+  <tr><td>4.14</td><td>Methods for Dynamic, Photorealistic Terrain Lighting</td><td>(433)</td></tr>
+  <tr><td>4.15</td><td>Cube Map Lighting Techniques</td><td>(444)</td></tr>
+  <tr><td>4.16</td><td>Procedural Texturing</td><td>(452)</td></tr>
+  <tr><td>4.17</td><td>Unique Textures</td><td>(459)</td></tr>
+  <tr><td>4.18</td><td>Textures as Lookup Tables for Per-Pixel Lighting Computations</td><td>(467)</td></tr>
+  <tr><td>4.19</td><td>Rendering with Handcrafted Shading Models</td><td>(477)</td></tr>
+</table>
+<h2>SECTION 5 NETWORK AND MULTIPLAYER (485)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td><td>(487)</td></tr>
+  <tr><td>5.1</td><td>Minimizing Latency in Real-Time Strategy Games</td><td>(488)</td></tr>
+  <tr><td>5.2</td><td>Real-Time Strategy Network Protocol</td><td>(496)</td></tr>
+  <tr><td>5.3</td><td>A Flexible Simulation Architecture for Massively Multiplayer Games</td><td>(506)</td></tr>
+  <tr><td>5.4</td><td>Scaling Multiplayer Servers</td><td>(520)</td></tr>
+  <tr><td>5.5</td><td>Template-Based Object Serialization</td><td>(534)</td></tr>
+  <tr><td>5.6</td><td>Secure Sockets</td><td>(546)</td></tr>
+  <tr><td>5.7</td><td>A Network Monitoring and Simulation Tool</td><td>(557)</td></tr>
+  <tr><td>5.8</td><td>Creating Multiplayer Games with DirectPlay 8.1</td><td>(561)</td></tr>
+  <tr><td>5.9</td><td>Wireless Gaming Using the Java Micro Edition</td><td>(573)</td></tr>
+</table>
+<h2>SECTION 6 AUDIO (583)</h2>
+<table>
+  <tr><td colspan="2">Introduction</td><td>(585)</td></tr>
+  <tr><td>6.1</td><td>Audio Compression with Ogg Vorbis</td><td>(587)</td></tr>
+  <tr><td>6.2</td><td>Creating a Compelling 3D Audio Environment</td><td>(595)</td></tr>
+  <tr><td>6.3</td><td>Obstruction Using Axis-Aligned Bounding Boxes</td><td>(600)</td></tr>
+  <tr><td>6.4</td><td>Using the Biquad Resonant Filter</td><td>(606)</td></tr>
+  <tr><td>6.5</td><td>Linear Predictive Coding for Voice Compression and Effects</td><td>(613)</td></tr>
+  <tr><td>6.6</td><td>The Stochastic Synthesis of Complex Sounds</td><td>(622)</td></tr>
+  <tr><td>6.7</td><td>Real-Time Modular Audio Processing for Games</td><td>(630)</td></tr>
+</table>
+
+<table>
+  <tr><td colspan="2">Appendix: About the CD-ROM</td><td>(639)</td></tr>
+  <tr><td colspan="2">Contents</td></tr>
+</table>
+
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-28T00:00:00+02:00" pubdate data-updated="true">May 28<span>th</span>, 2011</time></div>
+	<div class="tags">
+
+</div>
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2011/05/28/game-programming-gems-2/">
+		
+			Game Programming Gems 2, Table of Contents</a>
+	</h2>
+	<div class="entry-content">
+		<table>
+  <tr><td colspan="2">Preface</td><td> (xxi)</td></tr>
+  <tr><td colspan="2">About the Cover Image</td><td> (xxv)</td></tr>
+  <tr><td colspan="2">Author Bios</td><td> (xxvii)</td></tr>
+</table>
+<h2>SECTION 1 GENERAL PROGRAMMING (1)</h2>
+<table>
+  <tr><td colspan="2">Introduction: General Programming</td><td>(3)</td></tr>
+  <tr><td>1.1</td><td>Optimization for C++ Games</td><td>(5)</td></tr>
+  <tr><td>1.2</td><td>Inline Functions Versus Macros</td><td>(16)</td></tr>
+  <tr><td>1.3</td><td>Programming with Abstract Interfaces</td><td>(5)</td></tr>
+  <tr><td>1.4</td><td>Exporting C++ Classes from DLLs</td><td>(28)</td></tr>
+  <tr><td>1.5</td><td>Protect Yourself from DLL Hell and Missing OS Functions</td><td>(33)</td></tr>
+  <tr><td>1.6</td><td>Dynamic Type Information</td><td>(38)</td></tr>
+  <tr><td>1.7</td><td>A Property Class for Generic C++ Member Access</td><td>(46)</td></tr>
+  <tr><td>1.8</td><td>A Game Entity Factory</td><td>(51)</td></tr>
+  <tr><td>1.9</td><td>Adding Deprecation Facilities to C++</td><td> (62)</td></tr>
+  <tr><td>1.10</td><td>A Drop-in Debug Memory Manager</td><td>(66)</td></tr>
+  <tr><td>1.11</td><td>A Built-in Game Profiling Module</td><td>(74)</td></tr>
+  <tr><td>1.12</td><td>Linear Programming Model for Windows-based Games</td><td>(80)</td></tr>
+  <tr><td>1.13</td><td>Stack Winding</td><td>(85)</td></tr>
+  <tr><td>1.14</td><td>Self-Modifying Code</td><td>(91)</td></tr>
+  <tr><td>1.15</td><td>File Management Using Resource Files</td><td>(100)</td></tr>
+  <tr><td>1.16</td><td>Game input Recording and Playback</td><td>(105)</td></tr>
+  <tr><td>1.17</td><td>A Flexible Text Parsing System</td><td>(112)</td></tr>
+  <tr><td>1.18</td><td>A Generic Tweaker</td><td>(118)</td></tr>
+  <tr><td>1.19</td><td>Genuine Random Number Generation</td><td>(127)</td></tr>
+  <tr><td>1.20</td><td>Using Bloom Filters to improve Computational Performance</td><td>(133)</td></tr>
+  <tr><td>1.21</td><td>3ds max Skin Exporter and Animation Toolkit</td><td>(141)</td></tr>
+  <tr><td>1.22</td><td>Using Web Cameras in Video Games</td><td>(153)</td></tr>
+</table>
+
+<h2>SECTION 2 MATHEMATICS (163)</h2>
+<table>
+  <tr><td colspan="2">Introduction: Mathematics</td> <td>(165)</td></tr>
+  <tr><td>2.1</td><td>Floating-Point Tricks: Improving Performance with IEEE Floating Point</td><td>(167)</td></tr>
+  <tr><td>2.2</td><td>Vector and Plane Tricks</td><td>(182)</td></tr>
+  <tr><td>2.3</td><td>Fast, Robust Intersection of 3D Line Segments</td><td>(191)</td></tr>
+  <tr><td>2.4</td><td>Inverse Trajectory Determination</td><td>(205)</td></tr>
+  <tr><td>2.5</td><td>The Parallel Transport Frame</td><td>(215)</td></tr>
+  <tr><td>2.6</td><td>Smooth C2 Quaternion-based Flythrough Paths</td><td>(220)</td></tr>
+  <tr><td>2.7</td><td>Recursive Dimensional CLustering: A Fast Algorithm for Collision Detection</td><td>(228)</td></tr>
+  <tr><td>2.8</td><td>Programming Fractals</td><td>(239)</td></tr>
+</table>
+
+<h2>SECTION 3 ARTIFICIAL INTELLIGENCE (247)</h2>
+<table>
+  <tr><td colspan="2">Introduction: Artificial Intelligence</td><td>(249)</td></tr>
+  <tr><td>3.1</td><td>Strategies for Optimizing AI</td><td>(251)</td></tr>
+  <tr><td>3.2</td><td>Micro-Threads for Game Object AI</td><td>(258)</td></tr>
+  <tr><td>3.3</td><td>Managing AI with Micro-Threads</td><td>(265)</td></tr>
+  <tr><td>3.4</td><td>An Architecture for RTS Command Queuing</td><td>(273)</td></tr>
+  <tr><td>3.5</td><td>A High-Performance Tile-Based Line-of-Sight and Search System</td><td>(279)</td></tr>
+  <tr><td>3.6</td><td>Influence Mapping</td><td>(287)</td></tr>
+  <tr><td>3.7</td><td>Strategic Assessment Techniques</td><td>(298)</td></tr>
+  <tr><td>3.8</td><td>Terrain Reasoning for 3D Action Games</td><td>(307)</td></tr>
+  <tr><td>3.9</td><td>Expanded Geometry for Points-of-Visibility Pathfinding</td><td>(317)</td></tr>
+  <tr><td>3.10</td><td>Optimizing Points-of-Visibility Pathfinding</td><td>(324)</td></tr>
+  <tr><td>3.11</td><td>Flocking with Teeth: Predators and Prey</td><td>(330)</td></tr>
+  <tr><td>3.12</td><td>A Generic Fuzzy State Machine in C++</td><td> (337)</td></tr>
+  <tr><td>3.13</td><td>Imploding Combinatorial Explosion in a Fuzzy System</td><td>(342)</td></tr>
+  <tr><td>3.14</td><td>Using a Neutral Network in a Game: A Concrete Example</td><td>(351)</td></tr>
+</table>
+
+<h2>SECTION 4 GEOMETRY MANAGEMENT (359)</h2>
+<table>
+  <tr><td colspan="2">Introduction: Geometry Management</td><td>(361)</td></tr>
+  <tr><td>4.1</td><td>Comparison of VIPM Methods</td><td>(363)</td></tr>
+  <tr><td>4.2</td><td>Simplified Terrain Using Interlocking Tiles</td><td>(377)</td></tr>
+  <tr><td>4.3</td><td>Sphere Trees for Fast Visibility Culling, Ray Tracing and Range Searching</td><td>(384)</td></tr>
+  <tr><td>4.4</td><td>Compressed Axis-Aligned Bounding Box Trees</td><td>(388)</td></tr>
+  <tr><td>4.5</td><td>Direct Access Quadtree Lookup</td><td>(394)</td></tr>
+  <tr><td>4.6</td><td>Approximating Fish Tank Refractions</td><td>(402)</td></tr>
+  <tr><td>4.7</td><td>Rendering Print Resolution Screenshots</td><td>(406)</td></tr>
+  <tr><td>4.8</td><td>Applying Decals to Arbitrary Surfaces</td><td>(411)</td></tr>
+  <tr><td>4.9</td><td>Rendering Distans Scenery with Skyboxes</td><td>(416)</td></tr>
+  <tr><td>4.10</td><td>Self-Shadowing Characters</td><td>(421)</td></tr>
+  <tr><td>4.11</td><td>Classic Super Mario 64 Third-Person Control and Animation</td><td>(425)</td></tr>
+</table>
+
+<h2>SECTION 5 GRAPHICS DISPLAY (433)</h2>
+<table>
+  <tr><td colspan="2">Introduction: Graphics Display</td><td>(435)</td></tr>
+  <tr><td>5.1</td><td>Cartoon Rendering: Real-Time Silhouette Edge Detection and Rendering</td><td>(436)</td></tr>
+  <tr><td>5.2</td><td>Cartoon Rendering Using Texture Mapping and Programmable Vertex Shaders</td><td>(444)</td></tr>
+  <tr><td>5.3</td><td>Dynamix Per-Pixel Lighting Technique</td><td>(452)</td></tr>
+  <tr><td>5.4</td><td>Generating Procedural Clouds using 3D Hardware</td><td>(463)</td></tr>
+  <tr><td>5.5</td><td>Texture Masking for Faster Lens Flare</td><td>(474)</td></tr>
+  <tr><td>5.6</td><td>Practical Priority Buffer Shadows</td><td>(481)</td></tr>
+  <tr><td>5.7</td><td>Impostors: Adding Clutter</td><td>(488)</td></tr>
+  <tr><td>5.8</td><td>Operations for Hardware-Accelerated Procedural Texture Animation</td><td>(497)</td></tr>
+</table>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-28T00:00:00+02:00" pubdate data-updated="true">May 28<span>th</span>, 2011</time></div>
+	<div class="tags">
+
+</div>
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2011/05/28/game-programming-gems-1/">
+		
+			Game Programming Gems 1, Table of Contents</a>
+	</h2>
+	<div class="entry-content">
+		<p>(Page numbers are missing, waiting for my copy&#8230;)</p>
+
+<h2>SECTION 1 PROGRAMMING TECHNIQUES</h2>
+<table>
+  <tr><td>1.0</td><td>The Magic of Data-Driven Design</td></tr>
+  <tr><td>1.1</td><td>Object-Oriented Programming and Design Techniques</td></tr>
+  <tr><td>1.2</td><td>Fast Math Using Template Metaprogramming</td></tr>
+  <tr><td>1.3</td><td>An Automatic Singleton Utility</td></tr>
+  <tr><td>1.4</td><td>Using the STL in Game Programming</td></tr>
+  <tr><td>1.5</td><td>A Generic Function-Binding Interface</td></tr>
+  <tr><td>1.6</td><td>A Generic Handle-Based Resource Manager</td></tr>
+  <tr><td>1.7</td><td>Resource and Memory Management</td></tr>
+  <tr><td>1.8</td><td>Fast Data Load Trick</td></tr>
+  <tr><td>1.9</td><td>Frame-Based Memory Allocation</td></tr>
+  <tr><td>1.10</td><td>Simple, Fast Bit Arrays</td></tr>
+  <tr><td>1.11</td><td>A Network Protocol for Online Games</td></tr>
+  <tr><td>1.12</td><td>Squeezing More Out of Assert</td></tr>
+  <tr><td>1.13</td><td>Stats: Real-Time Statistics and In-Game Debugging</td></tr>
+  <tr><td>1.14</td><td>Real-Time In-Game Profiling</td><tr>
+</table>
+
+<h2>SECTION 2 MATHEMATICS</h2>
+<table>
+  <tr><td>2.0</td><td>Predictable Random Numbers</td></tr>
+  <tr><td>2.1</td><td>Interpolation Methods</td></tr>
+  <tr><td>2.2</td><td>Integrating the Equations of Rigid Body Motion</td></tr>
+  <tr><td>2.3</td><td>Polynomial Approximations to Trigonometric Functions</td></tr>
+  <tr><td>2.4</td><td>Using Implicit Euler Integration for Numerical Stability</td></tr>
+  <tr><td>2.5</td><td>Wavelets: Theory and Compression</td></tr>
+  <tr><td>2.6</td><td>Interactive Simulation of Water Surfaces</td></tr>
+  <tr><td>2.7</td><td>Quaternions for Game Programming</td></tr>
+  <tr><td>2.8</td><td>Matrix-Quaternion Conversions</td></tr>
+  <tr><td>2.9</td><td>Interpolating Quaternions</td></tr>
+  <tr><td>2.10</td><td>The Shortest Arc Quaternion</td></tr>
+</table>
+
+<h2>SECTION 3 ARTIFICIAL INTELLIGENCE</h2>
+<table>  
+  <tr><td>3.0</td><td>Designing a General Robust AI Engine</td></tr>
+  <tr><td>3.1</td><td>A Finite-State Machine Class</td></tr>
+  <tr><td>3.2</td><td>Game Trees</td></tr>
+  <tr><td>3.3</td><td>The Basics of A* for Path Planning</td></tr>
+  <tr><td>3.4</td><td>A* Aesthetic Optimizations</td></tr>
+  <tr><td>3.5</td><td>A* Speed Optimizations</td></tr>
+  <tr><td>3.6</td><td>Simplified 3D Movement and Pathfinding Using Navigation Meshes</td></tr>
+  <tr><td>3.7</td><td>Flocking: A Simple Technique for Simulating Group Behavior</td></tr>
+  <tr><td>3.8</td><td>Fuzzy Logic for Video Games</td></tr>
+  <tr><td>3.9</td><td>A Neural-Net Primer</td></tr>
+</table>
+
+<h2>SECTION 4 POLYGONOL TECHNIQUES</h2>
+<table>  
+  <tr><td>4.0</td><td>Optimizing Vertex Submissions for OpenGL</td></tr>
+  <tr><td>4.1</td><td>Tweaking A Vertex&#8217;s Projected Depth Value</td></tr>
+  <tr><td>4.2</td><td>The Vector Camera</td></tr>
+  <tr><td>4.3</td><td>Camera Control Techniques</td></tr>
+  <tr><td>4.4</td><td>A Fast Cylinder-Frustum Intersection Test</td></tr>
+  <tr><td>4.5</td><td>3D Collision Detection</td></tr>
+  <tr><td>4.6</td><td>Multi-Resolution Maps for Interaction Detection</td></tr>
+  <tr><td>4.7</td><td>Computing the Distance into a Sector</td></tr>
+  <tr><td>4.8</td><td>Object Occlusion Culling</td></tr>
+  <tr><td>4.9</td><td>Never Let &#8216;Em See You Pop - Issues in Geometric Level of Detail Selection</td></tr>
+  <tr><td>4.10</td><td>Octree Construction</td></tr>
+  <tr><td>4.11</td><td>Loose Octrees</td></tr>
+  <tr><td>4.12</td><td>View-Independent Progressive Meshing</td></tr>
+  <tr><td>4.13</td><td>Interpolated 3D Keyframe Animation</td></tr>
+  <tr><td>4.14</td><td>A Fast and Simple Skinning Techniques</td></tr>
+  <tr><td>4.15</td><td>Filling the Gaps - Advanced Animation Using Stitching and Skinning</td></tr>
+  <tr><td>4.16</td><td>Real-Time Realistic Terrain Generation</td></tr>
+  <tr><td>4.17</td><td>Fractal Terrain Generation - Fault Formation</td></tr>
+  <tr><td>4.18</td><td>Fractal Terrain Generation - Midpoint Displacement</td></tr>
+  <tr><td>4.19</td><td>Fractal Terrain Generation - Particle Deposition</td></tr>
+</table>
+
+<h2>SECTION 5 PIXEL EFFECTS</h2>
+<table>  
+  <tr><td>5.0</td><td>2D Lens Flare</td></tr>
+  <tr><td>5.1</td><td>Using 3D Hardware for 2D Sprite Effects</td></tr>
+  <tr><td>5.2</td><td>Motif-Based Static Lighting</td></tr>
+  <tr><td>5.3</td><td>Simulated Real-Time Lighting Using Vertex Color Interpolation</td></tr>
+  <tr><td>5.4</td><td>Attenuation Maps</td></tr>
+  <tr><td>5.5</td><td>Advanced Texturing Using Texture Coordinate Generation</td></tr>
+  <tr><td>5.6</td><td>Hardware Bump Mapping</td></tr>
+  <tr><td>5.7</td><td>Ground-Plane Shadows</td></tr>
+  <tr><td>5.8</td><td>Real-Time Shadows on Complex Objects</td></tr>
+  <tr><td>5.9</td><td>Improving Environment-Mapped Reflection Using Glossy Prefiltering and the Fresnel Term</td></tr>
+  <tr><td>5.10</td><td>Convincing-Looking Glass for Games</td></tr>
+  <tr><td>5.11</td><td>Refraction Mapping for Liquids in Containers</td></tr>
+</table>
+
+<h2>SECTION 6 APPENDIX</h2>
+<table>  
+  <tr><td>6.0</td><td>The Matrix Utility Library</td></tr>
+  <tr><td>6.1</td><td>The Text Utility Library</td></tr>
+  <tr><td>6.2</td><td>About the CD-ROM</td></tr>
+</table>
+
+<table>
+  Index
+</table>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-28T00:00:00+02:00" pubdate data-updated="true">May 28<span>th</span>, 2011</time></div>
+	<div class="tags">
+
+</div>
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2011/05/28/best-of-game-programming-gems/">
+		
+			Best of Game Programming Gems, Table of Contents</a>
+	</h2>
+	<div class="entry-content">
+		<table>
+  <tr><td colspan="2">Acknowledgments</td><td>(ix)</td></tr>
+  <tr><td colspan="2">About the Authors</td><td>(xi)</td></tr>
+  <tr><td colspan="2">Introduction</td><td>(xxv)</td></tr>
+</table>
+
+<h2>SECTION 1 GENERAL INFORMATION (1)</h2>
+<table>
+  <tr><td>1.1</td><td>The Science of Debugging Games</td><td>(3)</td></tr>
+  <tr><td>1.2</td><td>Finding Redeeming Value in C-Style Macros</td><td>(17)</td></tr>
+  <tr><td>1.3</td><td>Inline Functions vs Macros</td><td>(29)</td></tr>
+  <tr><td>1.4</td><td>Squeezing More Out of Assaert</td><td>(35)</td></tr>
+  <tr><td>1.5</td><td>Programming with Abstract Interfaces</td><td>(41)</td></tr>
+  <tr><td>1.6</td><td>The Beauty of Weak References and Null Objects</td><td>(49)</td></tr>
+  <tr><td>1.7</td><td>Using the STL in Game Programming</td><td>(57)</td></tr>
+  <tr><td>1.8</td><td>Custom STL Allocators</td><td>(73)</td></tr>
+  <tr><td>1.9</td><td>Optimizations for C++ Games</td><td>(83)</td></tr>
+  <tr><td>1.10</td><td>Real-Time Hierarchical Profiling</td><td>(95)</td></tr>
+  <tr><td>1.11</td><td>A Generic Tree Container in C++</td><td>(103)</td></tr>
+  <tr><td>1.12</td><td>Lock-Free Algorithms</td><td>(113)</td></tr>
+  <tr><td>1.13</td><td>Utilizing Multicore Processors with OpenMP</td><td>(125)</td></tr>
+</table>
+
+<h2>SECTION 2 MATH AND PHYSICS (133)</h2>
+<table>
+  <tr><td>2.1</td><td>More Approximations to Trigonometric Functions</td><td>(135)</td></tr>
+  <tr><td>2.2</td><td>Faster Quaternion Interpolation Using Approximations</td><td>(153)</td></tr>
+  <tr><td>2.3</td><td>Quaternion Compression</td><td>(175)</td></tr>
+  <tr><td>2.4</td><td>Zobrist Hash Using the Mersenne Twister</td><td>(181)</td></tr>
+  <tr><td>2.5</td><td>Solving Accuracy Problems in Large World Coordinates</td><td>(187)</td></tr>
+  <tr><td>2.6</td><td>Writing a Verlet-Based Physics Engine</td><td>(201)</td></tr>
+  <tr><td>2.7</td><td>Constraints in Rigid Body Dynamics</td><td>(211)</td></tr>
+  <tr><td>2.8</td><td>The Jacobian Transpose Method for Inverse Kinematics</td><td>(223)</td></tr>
+</table>
+
+<h2>SECTION 3 ARTIFICIAL INTELLIGENCE (235)</h2>
+<table>
+  <tr><td>3.1</td><td>The Basics of A* for Path Planning</td><td>(237)</td></tr>
+  <tr><td>3.2</td><td>A* Aesthetic Optimizations</td><td>(247)</td></tr>
+  <tr><td>3.3</td><td>A* Speed Optimizations</td><td>(255)</td></tr>
+  <tr><td>3.4</td><td>Tactical Path-Finding with A</td><td> (271)</td></tr>
+  <tr><td>3.5</td><td>A Fast Approach to Navigation Meshes</td><td>(285)</td></tr>
+  <tr><td>3.6</td><td>Flocking: A Simple Technique for Simulating Group Behavior</td><td>(297)</td></tr>
+  <tr><td>3.7</td><td>A Finite-State Machine Class</td><td>(311)</td></tr>
+  <tr><td>3.8</td><td>Implementing Practical Planning for Game AI</td><td>(323)</td></tr>
+</table>
+
+<h2>SECTION 4 GRAPHICS (339)</h2>
+<table>
+  <tr><td>4.1</td><td>T-Junction Elimination and Retriangulation</td><td>(341)</td></tr>
+  <tr><td>4.2</td><td>Filling the Gaps: Advanced Animation Using Stitching and Skinning</td><td>(347)</td></tr>
+  <tr><td>4.3</td><td>Improved Skin Deformation Using Kinematic Skeletons</td><td>(355)</td></tr>
+  <tr><td>4.4</td><td>Motion Capture Data Compression</td><td>(363)</td></tr>
+  <tr><td>4.5</td><td>Compressed Axis-Aligned Bounding Box Trees</td><td>(371)</td></tr>
+  <tr><td>4.6</td><td>Textures as Lookup Tables for Per-Pixel Lighting Computations</td><td>(377)</td></tr>
+  <tr><td>4.7</td><td>Methods for Dynamic, Photorealistic Terrain Lightning</td><td>(387)</td></tr>
+  <tr><td>4.8</td><td>Practical Sky Rendering for Games</td><td>(399)</td></tr>
+  <tr><td>4.9</td><td>Powerful Explosion Effects using Billboard Particles</td><td>(411)</td></tr>
+  <tr><td>4.10</td><td>Rendering Handcrafted Shading Models</td><td>(421)</td></tr>
+</table>
+
+<h2>SECTION 5 NETWORKING (427)</h2>
+<table>
+  <tr><td>5.1</td><td>Overcoming Network Address Translation in Peer-to-Peer Communications</td><td>(429)</td></tr>
+  <tr><td>5.2</td><td>Minimizing Latency in Real-Time Strategy Games</td><td>(451)</td></tr>
+  <tr><td>5.3</td><td>Real-Time Strategy Network Protocol</td><td>(459)</td></tr>
+  <tr><td>5.4</td><td>Secure Sockets</td><td>(469)</td></tr>
+  <tr><td>5.5</td><td>Bit Packing: A Network Compression Technique</td><td>(481)</td></tr>
+</table>
+
+<h2>SECTION 6 AUDIO (489)</h2>
+<table>
+  <tr><td>6.1</td><td>A Basic Music Sequencer for Games</td><td>(491)</td></tr>
+  <tr><td>6.2</td><td>Audio Compression with Ogg Vorbis</td><td>(503)</td></tr>
+  <tr><td>6.3</td><td>Using 3D Surfaces as Audio Emitters</td><td>(511)</td></tr>
+  <tr><td>6.4</td><td>Introduction to Single-Speaker Speech Recognition</td><td>(521)</td></tr>
+  <tr><td>6.5</td><td>A Technique to instantaneously Reuse Voices in a Sample-Based Synthesizer</td><td>(531)</td></tr>
+</table>
+
+<table>
+  <tr><td colspan="2">Index</td><td>(535)</td></tr>
+</table>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-28T00:00:00+02:00" pubdate data-updated="true">May 28<span>th</span>, 2011</time></div>
+	<div class="tags">
+
+</div>
+	
+</div></article>
+
+<nav id="pagenavi">
+    
+        <a href="/" class="prev">Prev</a>
+    
+    
+    <div class="center"><a href="/archives">Blog Archives</a></div>
+</nav></div>
+	<footer id="footer" class="inner">Copyright &copy; 2013
+
+    Bengt Ericsson
+
+<br>
+Powered by Octopress.
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>
