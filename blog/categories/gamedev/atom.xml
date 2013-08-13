@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gamedev | (Neuron => String) => Ethernet]]></title>
   <link href="http://Zolomon.github.io/blog/categories/gamedev/atom.xml" rel="self"/>
   <link href="http://Zolomon.github.io/"/>
-  <updated>2013-08-13T09:31:49+02:00</updated>
+  <updated>2013-08-13T11:26:34+02:00</updated>
   <id>http://Zolomon.github.io/</id>
   <author>
     <name><![CDATA[Bengt Ericsson]]></name>
@@ -23,14 +23,20 @@
 <p>Since a while back I have been reading about entity-component architectures (or, how to utilize data-oriented design) in game development.
 What are they? What problems do they solve? These questions are easily answered by watching this:</p>
 
-<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/16ZF9XqkfRY "></iframe></div></p>
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/16ZF9XqkfRY 600 400 "></iframe></div></p>
 
-<p>They have more great videos at the <a href="http://www.youtube.com/user/GameEngineArchitects">Game Engine Architecture</a> channel on YouTube.</p>
+<p>They have more great videos at the <a href="http://www.youtube.com/user/GameEngineArchitects">Game Engine Architects</a> channel on YouTube.</p>
 
-<p>Basically the features are:
-* Use compact data structures which utilizes the computer&rsquo;s caches to decrease stalls in the CPU pipeline.
-* Higher flexibility for entity management; create different systems that act isolated on a set of entities based on patterns. [This is incredibly powerful and reminds a lot about the functional paradigm]
-* Data-oriented; data exist in the form of content and markup files that the game&rsquo;s factories parse to create the in-game entities. Can basically have hot-swap features in-game to allow art users to get instant visual feedback while rendering. If some data file changes, you update the content in-game at the same time. No need for recompilation.</p>
+<p>Basically the features are:</p>
+
+<ul>
+<li>Use compact data structures which utilizes the computer&rsquo;s caches to decrease stalls in the CPU pipeline.</li>
+<li>Higher flexibility for entity management; create different systems that act isolated on a set of entities based on patterns. [This is incredibly powerful and reminds a lot about the functional paradigm]</li>
+<li>Data-oriented; data exist in the form of content and markup files that the game&rsquo;s factories parse to create the in-game entities. Can basically have hot-swap features in-game to allow art users to get instant visual feedback while rendering. If some data file changes, you update the content in-game at the same time. No need for recompilation.</li>
+</ul>
+
+
+<p>Here are some more links worth checking out:</p>
 
 <ul>
 <li><a href="http://gamadu.com/artemis/index.html">http://gamadu.com/artemis/index.html</a> &mdash; the Artemis Framework with ports for most common languages.</li>
