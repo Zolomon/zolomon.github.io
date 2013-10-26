@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://Zolomon.github.io
+url: http://zolomon.com
 title: (Neuron => String) => Ethernet
 subtitle: "[GameDev, AI, Scheme, LISP, FP, ...]"
 author: Bengt Ericsson
