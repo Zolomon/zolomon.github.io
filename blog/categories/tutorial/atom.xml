@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tutorial | (Neuron => String) => Ethernet]]></title>
+  <link href="http://Zolomon.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
+  <link href="http://Zolomon.github.io/"/>
+  <updated>2013-08-15T15:53:29+02:00</updated>
+  <id>http://Zolomon.github.io/</id>
+  <author>
+    <name><![CDATA[Bengt Ericsson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setting up Jekyll on Windows 7]]></title>
+    <link href="http://Zolomon.github.io/blog/2012/02/23/setting-up-jekyll-on-windows-7/"/>
+    <updated>2012-02-23T00:00:00+01:00</updated>
+    <id>http://Zolomon.github.io/blog/2012/02/23/setting-up-jekyll-on-windows-7</id>
+    <content type="html"><![CDATA[<h1>How I installed Jekyll on Windows 7</h1>
+
+<h2>Step 1: Install <a href="http://www.rubyinstaller.org/downloads/">Ruby with the RubyInstaller</a></h2>
+
+<p>Download and install Ruby (I chose <a href="http://rubyforge.org/frs/download.php/75848/rubyinstaller-1.9.3-p125.exe">rubyinstaller-1.9.3-p125.exe</a>).
+Then <a href="https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">download and unzip the DevKit</a> version of Ruby from the same page.</p>
+
+<h3>How to <a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">install the DevKit</a></h3>
+
+<p>While installation is (in general) simple, please ensure you carefully follow each step below.</p>
+
+<h4>1. Preparation</h4>
+
+<p>If you previously installed the legacy DevKit devkit-3.4.5r3-20091110.7z, its artifacts were extracted into each Ruby installation and need to be manually removed. Remove the gcc.bat, make.bat, and sh.bat stub batch files in <code>&lt;RUBY_INSTALL_DIR&gt;\bin</code> and the <code>&lt;RUBY_INSTALL_DIR&gt;\devkit</code> subdirectory for each Ruby installation using the legacy DevKit.
+If you previously installed one of the legacy self-extracting DevKit’s, follow the SFX DevKit upgrade instructions.</p>
+
+<h4>2. Download Files</h4>
+
+<p>The current DevKit is available at the RubyInstaller download page with older versions available at the archives page. As backup, check our GitHub downloads page.</p>
+
+<h4>3. Extract Files</h4>
+
+<p>Left double-click the self-extracting executable (SFX) downloaded from Step 2 and choose a directory (without spaces) to install the DevKit artifacts into. For example, <code>C:\DevKit</code>. NOTE: the SFX is really a 7-Zip archive with a bit of embedded magic. If you already have 7-Zip installed, you can simply right-click it and extract it’s contents as you would a normal 7z archive. In the instructions that follow, the directory that you selected is identified as <code>&lt;DEVKIT_INSTALL_DIR&gt;</code>.</p>
+
+<h4>4. Run Installation Scripts</h4>
+
+<p><code>cd &lt;DEVKIT_INSTALL_DIR&gt;</code> from Step 3 above.
+ruby dk.rb init to generate the <code>config.yml</code> file to be used later in this Step. Your installed Rubies will be listed there (only those installed by a RubyInstaller package are detected at present).
+edit the generated config.yml file to include installed Rubies not automagically discovered or remove Rubies you do not want to use the DevKit with.</p>
+
+<p>[optional] <code>ruby dk.rb review</code> to review the list of Rubies to be enhanced to use the DevKit and verify the changes you made to it are correct.
+finally, <code>ruby dk.rb install</code> to DevKit enhance your installed Rubies. This step installs (or updates) an <code>operating_system.rb</code> file into the relevant directory needed to implement a RubyGems pre_install hook and a <code>devkit.rb</code> helper library file into <code>&lt;RUBY_INSTALL_DIR&gt;\lib\ruby\site_ruby</code>. NOTE: you may need to use the <code>--force</code> option to update (with backup of the originals) the above mentioned files as discussed at the SFX DevKit upgrade FAQ entry.</p>
+
+<h4>5. Test Installation</h4>
+
+<p>Confirm your Ruby environment is correctly using the DevKit by running gem install rdiscount &mdash;platform=ruby. RDiscount should install correctly and you should see Temporarily enhancing PATH to include DevKit&hellip; in the screen messages.</p>
+
+<p>Next run <code>ruby -rubygems -e "require 'rdiscount'; puts RDiscount.new('**Hello RubyInstaller**').to_html"</code> to confirm that the rdiscount gem is working.</p>
+
+<h2>Installing <a href="">Jekyll</a></h2>
+
+<p>Install Jekyll using <code>gem install jekyll</code> in your command prompt.</p>
+
+<h2>Clone <a href="jekyllbootstrap.com">Jekyll Bootstrap</a>!</h2>
+
+<p>Go to the Jekyll Bootstrap website and follow the instructions there, then you&rsquo;re done!</p>
+]]></content>
+  </entry>
+  
+</feed>

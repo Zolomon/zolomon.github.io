@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: art | (Neuron => String) => Ethernet]]></title>
+  <link href="http://Zolomon.github.io/blog/categories/art/atom.xml" rel="self"/>
+  <link href="http://Zolomon.github.io/"/>
+  <updated>2013-08-15T15:53:29+02:00</updated>
+  <id>http://Zolomon.github.io/</id>
+  <author>
+    <name><![CDATA[Bengt Ericsson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ctrl+Paint]]></title>
+    <link href="http://Zolomon.github.io/blog/2013/08/15/ctrl-plus-paint/"/>
+    <updated>2013-08-15T15:44:00+02:00</updated>
+    <id>http://Zolomon.github.io/blog/2013/08/15/ctrl-plus-paint</id>
+    <content type="html"><![CDATA[<h1>Ctrl+Paint: How to Draw</h1>
+
+<p>A few days ago I received my Wacom Intuos5 Small Touch. My happiness since has reached exponential levels.
+Drawing with it is wonderful, better than on dead trees most of the time. The only annoying part is that
+I can&rsquo;t draw with it while I&rsquo;m on the bus.</p>
+
+<p>A friend of mine, <a href="http://www.kulecka.com">Alexandra</a>, showed me <a href="http://ctrlpaint.com/">this wonderful site</a> with
+great videos to improve your drawing skills, both analog and digital.</p>
+
+<p>Currently I&rsquo;m on lesson 2 and have improved a lot in a few hours. This is great!</p>
+]]></content>
+  </entry>
+  
+</feed>
