@@ -12,4 +12,3 @@ The goal is the make emacs a more comfortable experience than VS2013 on Windows 
 
 * [Prelude](http://github.com/bbatsov/prelude): Starter pack
 * [Omnisharp](http://www.omnisharp.net/): for C# & .NET
-
