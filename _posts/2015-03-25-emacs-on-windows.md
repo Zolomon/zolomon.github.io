@@ -18,6 +18,5 @@ The goal is the make emacs a more comfortable experience than VS2013 on Windows 
 Found solutions to problems that arose: 
 
 * When using `C-c C-c` to compile, there were some problems with the paths.
-** First I had to setup PATH variables for `MSBuild.exe` and `Fsc.exe`, and then figure out how 
+    * First I had to setup PATH variables for `MSBuild.exe` and `Fsc.exe`, and then figure out how 
    `emacs` [prefers paths](http://stackoverflow.com/questions/3981850/running-process-that-has-space-characters-in-its-path-name-with-emacs-on-windows) with spaces in Windows.
-
