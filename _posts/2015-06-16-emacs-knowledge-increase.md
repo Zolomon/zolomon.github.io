@@ -14,3 +14,4 @@ Here is a small dump of new features in Emacs that I have assimilated during the
 3. [Projectile](https://github.com/bbatsov/projectile), working with files in projects
 4. [Popwin](https://github.com/m2ym/popwin-el), use popups instead of buffers
 5. [switch-window](https://github.com/dimitri/switch-window), choose buffers by number
+6. [Hyde](https://github.com/nibrahim/Hyde), working with Jekyll
