@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New Emacs findings"
-date:   2015-01-17 09:19:13
+date:   2015-08-17 09:19:13
 comments: true
 categories: emacs
 ---
