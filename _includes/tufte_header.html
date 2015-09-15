@@ -3,10 +3,11 @@
   <div class="wrapper">
     <nav class="site-nav">
       <div class="trigger">
-        <a class="site-title" style="float: left;" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <span>,</span>
         {% for page in site.pages %}
           {% if page.title %}
-          <a class="page-link" style="float: right;" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>
