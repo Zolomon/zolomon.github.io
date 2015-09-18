@@ -14,8 +14,7 @@ title: Emacs
 6. [Hyde](https://github.com/nibrahim/Hyde), working with Jekyll
 7. [Auto-fill-mode][auto-fill-mode]: Automatically insert whitespace at `(fill-column)` set by `C-x f`.
 8. Rename files with `rename-file`.
+9. [Occur][occur]: to search for lines in a buffer matching a regexp.
 
 [auto-fill-mode]: http://www.emacswiki.org/emacs/AutoFillMode
-
-  
-
+[occur]: http://emacswiki.org/emacs/OccurMode
