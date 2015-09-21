@@ -15,6 +15,8 @@ title: Emacs
 7. [Auto-fill-mode][auto-fill-mode]: Automatically insert whitespace at `(fill-column)` set by `C-x f`.
 8. Rename files with `rename-file`.
 9. [Occur][occur]: to search for lines in a buffer matching a regexp.
+10. [web-mode][web-mode]: to work with web related stuff. `C-c C-f` to fold tags.
 
 [auto-fill-mode]: http://www.emacswiki.org/emacs/AutoFillMode
 [occur]: http://emacswiki.org/emacs/OccurMode
+[web-mode]: http://web-mode.org/
