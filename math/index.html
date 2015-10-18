@@ -1,0 +1,110 @@
+---
+layout: page
+title: Exercise in Mathematics
+published: true
+---
+
+<h4>1. Simple exercise in probability</h4>
+
+<p>
+What is approximately $P(\overline{X} < 30)$, where the average of $25$
+independent random variables, all of which share the same distribution with the
+expected value of $31$ and the variance $34$?
+</p>
+<p>
+Answer with two ($2$) decimals.
+</p>
+
+<h4>1. Solution</h4>
+<p>
+    A little experience is necessary to understand how to solve this problem.
+</p>
+<p>
+    There is a theorem called the "Central Limit Theorem" (CLT) which will provide
+    us with the necessary tools.
+</p>
+<p>
+    The definition is:
+</p>
+<p>
+    $$ Y_{\text{n}} = X_{\text{1}} + X_{\text{2}} + ... + X_{\text{n}}, $$
+    $$ Z = \frac{Y_{\text{n}} - n\mu}{\sigma\sqrt{n}},$$
+    $$ \lim_{x\to\infty} P(a < Z \leq b) =
+    \Phi(b) - \Phi(a). $$
+</p>
+<p>
+    Where $\Phi(x)$ is the density function for $N(\mu, \sigma)$, $\mu$ is the expected
+    value, $\sigma$ the standard deviation, and $n$ the number of random variables.
+</p>
+<p>
+    So, if $n$ is large enough, we can assume that the above formula holds, meaning that
+    the probability for the $Z$ to be within the bounds of $a$ and $b$, will be the
+    same as calculating the difference between the density function for each of the
+    $\text{z-scores}$.
+</p>
+
+<p>
+    <strong>(I'm tired, and will stop being so rigorous. :( )</strong>
+</p>
+
+<p>
+    If we let $X_{\text{i}}$, $i = 1, 2, ..., n = 25$ be the value for the
+    random variable $i$ and the average of these be represented by $\overline{X}
+    = \frac{X_{\text{1}} + X_{\text{2}} + ... + X_{\text{25}}}{25}$, then
+    $\overline{X}$ has a normal distribution, $\overline{X} \in
+    N(E(\overline{X}), D(\overline{X}))$.
+</p>
+<p>    
+    This is because it's a linear function of random variables with the same
+    distribution and $CLT$ states that these will have a normal distribution if
+    $n$ is large enough.
+</p>
+
+<p>
+    With,
+    $$
+    E(X_{\text{i}}) = \mu = 31,
+    $$
+
+    $$
+    V(X_{\text{i}}) = \sigma^{2} = 34,
+    $$
+
+    $$
+    D(X_{\text{i}}) = \sigma = \sqrt{34} = 5.83,
+    $$
+</p>
+<p>
+    $E(\overline{X})$ and $D(\overline{X})$ then becomes:
+</p>
+
+<p>
+    $$
+    E(\overline{X}) = E(\frac{1}{n} \sum_{i=1}^{n} X_{\text{i}}) =
+    \frac{1}{n} \cdot \sum_{i=1}^{n}E(X_{\text{i}}) =
+    \frac{1}{n} \cdot n \cdot E(X_{\text{i}}) = E(X_{\text{i}}) = \mu = 31,
+    $$
+
+    $$
+    V(\overline{X}) = V(\frac{1}{n^{2}} \sum_{i=1}^{n} X_{\text{i}}) =
+    \frac{1}{n^{2}} \sum_{i=1}^{n}V(X_{\text{i}}) = \frac{1}{n^{2}} \cdot n
+    \cdot V(X_{\text{i}}) = \frac{V(X_{\text{i}})}{n} = \frac{34}{25} = 1.36,
+    $$
+
+    $$
+    D(\overline{X}) = \sqrt{V(\overline{X})} \approx 1.16619
+    $$
+</p>
+<p>
+    The probability we are looking for then becomes:
+    $$
+    P(\overline{X} < 30) = \Phi(\frac{X - E(\overline{X})}{D(\overline{X})})
+    = \Phi(\frac{30 - 31}{1.16619}) = \Phi(-0.8574) = 1 - \Phi(0.8574)$$
+    
+    $$
+    = \text{[normal dist. table lookup]} = 1 - 0.8023 = 0.1977 \approx 0.20    
+    $$
+    $$
+    \tag*{$\square$}
+    $$
+</p>
