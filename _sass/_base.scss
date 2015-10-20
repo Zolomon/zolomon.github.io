@@ -101,23 +101,47 @@ a {
     }
 }
 
-
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
 
 /**
  * Blockquotes
  */
 blockquote {
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    border-left: 5px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    /* @include box-shadow(0 4px 4px -4px #eee); */
 
+    p {
+        margin: 0 0 10px;
+        color: $text-color;
+    }
+
+    footer {
+        display: block;
+        font-size: 80%;
+        line-height: 1.42857143;
+        text-color: $grey-color-dark;
+
+        &:before {
+            content: "\2014 \00A0";
+        }
+    }
+    
     > :last-child {
         margin-bottom: 0;
     }
+
+    
 }
+
+
 
 
 
