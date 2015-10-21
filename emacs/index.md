@@ -1,6 +1,7 @@
 ---
-layout: tufte
+layout: page
 title: Emacs
+permalink: /emacs/
 ---
 
 # Zolomon's Page of Useful Emacs Tricks
@@ -16,6 +17,9 @@ title: Emacs
 8. Rename files with `rename-file`.
 9. [Occur][occur]: to search for lines in a buffer matching a regexp.
 10. [web-mode][web-mode]: to work with web related stuff. `C-c C-f` to fold tags.
+
+### Copy the whole buffer
+<script src="https://gist.github.com/61ef174234d41276a7cb.js?file=copy-buffer.el" type="text/javascript"></script>
 
 [auto-fill-mode]: http://www.emacswiki.org/emacs/AutoFillMode
 [occur]: http://emacswiki.org/emacs/OccurMode
