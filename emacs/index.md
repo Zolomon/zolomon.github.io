@@ -24,3 +24,7 @@ permalink: /emacs/
 [auto-fill-mode]: http://www.emacswiki.org/emacs/AutoFillMode
 [occur]: http://emacswiki.org/emacs/OccurMode
 [web-mode]: http://web-mode.org/
+
+### Wrapping text according to `fill-column`
+
+If you have text that you would like to be formatted, use `M-q` which by default is bound to `fill-paragraph`.
