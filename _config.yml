@@ -11,4 +11,4 @@ github_username:  zolomon
 
 # Build settings
 markdown: kramdown
-highlighter: rogue
+highlighter: rouge
