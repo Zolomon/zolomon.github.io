@@ -4,8 +4,17 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+![Zolomon](https://scontent-arn2-1.cdninstagram.com/t51.2885-19/11849903_1614498268837767_1567710289_a.jpg
+"Zolomon")
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Bengt "Zolomon" Ericsson is my name, at the moment of
+writing I'm 28 years old.
+Currently working as a software developer while finish a M.Sc. in
+Computer Science, have a few courses left in mathematics to grind off
+before my thesis.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Areas that I dedicate a few hours each month go into Artificial
+Intelligence, Machine Learning, Computer Graphics, Game Development
+and general Software Development.
+
+In the footer of this blog you can find some contact information of mine.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Journal 2015-06-17"
+title: "More MSBuild"
 date: 2015-06-17 15:46:00
 comments: true
 categories: development

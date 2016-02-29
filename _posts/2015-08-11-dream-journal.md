@@ -4,6 +4,7 @@ title:  "Dream journal"
 date:   2015-08-11 08:06:13
 comments: true
 categories: dreams
+published: false
 ---
 
 # Dreams
