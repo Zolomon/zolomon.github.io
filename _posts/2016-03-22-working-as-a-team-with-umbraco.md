@@ -6,21 +6,41 @@ comments: true
 categories: development
 ---
 
-Below is a quick summary on how to effectively work as a team with Umbraco CMS.
-If you have any suggestions or improvements, please leave a comment.
+Below is a quick summary on how to effectively work as a team with
+Umbraco CMS.  If you have any suggestions or improvements, please
+leave a comment.
 
-Create revisions with Umbraco Courier 2, store them in Git as well as your ASP .NET MVC solution containing your Umbraco CMS installation.
+Create revisions with Umbraco Courier 2, store them in Git as well as
+your ASP .NET MVC solution containing your Umbraco CMS installation.
 
-Developers can work in parallel as long as the `Web.config` file points to the same database.
+Developers can work in parallel as long as the `Web.config` file
+points to the same database.
 
-A single `Revision` from **Umbraco Courier 2**, containing content, can then be transferred from `Development` environment to the `Staging` environment for testing and verification.
+A single `Revision` from **Umbraco Courier 2**, containing content,
+can then be transferred from `Development` environment to the
+`Staging` environment for testing and verification.
 
-**Feature** changes, that result in newly compiled .DLL files, templates etc. should simply be copied over via `XCOPY` or similar constructs, preferably performed via automation.
+**Feature** changes, that result in newly compiled .DLL files,
+templates etc. should simply be copied over via `XCOPY` or similar
+constructs, preferably performed via automation.
 
-Obvious but important to mention is that **Feature** changes also must be committed to the Git repository.
+For example, the `~/bin`, `~/Content`, and `~/Views` directories will
+need to be manually copied over to the `Staging` environment from the
+`Development` environment.
 
-Once changes are approved and new content has been added by non-developers, this content can be synchronised with the `Development` environment again via Umbraco Courier 2.
+Obvious but important to mention is that **Feature** changes also must
+be committed to the Git repository.
 
-To publish, synchronise content changes from the `Staging` environment with the `Production` environment using Umbraco Courier 2, or just `XCOPY` the whole `Staging` environment to `Production`.
+Once changes are approved and new content has been added by
+non-developers, this content can be synchronised with the
+`Development` environment again via Umbraco Courier 2.
 
-Make sure that you republish the whole site after copy so that new content changes will appear publicly.
+To publish, synchronise content changes from the `Staging` environment
+with the `Production` environment using Umbraco Courier 2, or just
+`XCOPY` the whole `Staging` environment to `Production`.
+
+Make sure that you republish the whole site after copy so that new
+content changes will appear publicly.
+
+The ASP.NET MVC solution containing the **Feature** changes will need
+to be redeployed via Project -> Publish into some folder.
