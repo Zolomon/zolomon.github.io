@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Zolomon](https://scontent-arn2-1.cdninstagram.com/t51.2885-19/11849903_1614498268837767_1567710289_a.jpg
+![Zolomon](https://instagram.fbma1-1.fna.fbcdn.net/t51.2885-19/s320x320/14723021_345472442470543_4055531201484554240_a.jpg
 "Zolomon")
 
 Bengt "Zolomon" Ericsson is my name, at the moment of
