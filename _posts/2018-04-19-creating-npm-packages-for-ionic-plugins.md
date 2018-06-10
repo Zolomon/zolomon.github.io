@@ -17,7 +17,7 @@ Here are some of the information that ended up learning quite a bit from.
 * How to make [Angular libraries][angular-libs] like a pro
 * [Angular Package Format][apf]
 * Peer dependencies[1][peer-1][2][peer-2] in NPM
-* [semantic-release][semantic-release] with [CLI][semantic-release-cli] vs [standard][]
+* [semantic-release][semantic-release] with [CLI][semantic-release-cli] vs [standard][standard-version]
 
 # Modules in Angular
 * [Feature modules][feature-module] in Angular
