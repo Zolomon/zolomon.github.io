@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Creating NPM packages for Ionic plugins"
+date:   2018-04-19 08:00:00
+comments: true
+categories: development, rxjs, reactive programming
+published: false
+---
 
 # Research:
 * [https://docs.gitlab.com/ee/ci/yaml/#coverage](https://docs.gitlab.com/ee/ci/yaml/#coverage) - Config file

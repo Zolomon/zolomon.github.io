@@ -20,11 +20,11 @@ Here are some of the information that ended up learning quite a bit from.
 * [semantic-release][semantic-release] with [CLI][semantic-release-cli] vs [standard][standard-version]
 
 # Modules in Angular
+
 * [Feature modules][feature-module] in Angular
     * Use `forRoot()` to make singleton services from inside modules.
+
 [feature-module]: https://angular-2-training-book.rangle.io/handout/modules/feature-modules.html
-
-
 [ng-packagr]: https://medium.com/@nikolasleblanc/building-an-angular-4-component-library-with-the-angular-cli-and-ng-packagr-53b2ade0701e
 [ng-packagr-issue]: https://github.com/dherges/ng-packagr/issues/434
 [nexus-registry]: https://blog.sonatype.com/using-nexus-3-as-your-repository-part-2-npm-packages
