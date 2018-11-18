@@ -92,9 +92,9 @@ See page 62 in the slides, always return the same reference to items that have n
 * Router state `ngrx-router-store`
 [https://github.com/ngrx/platform/tree/master/modules/router-store](router-store)
 
-* For subscriptions of RxJS observables, use `takeUntil` inside Destroy
-Lookup npm take until destroy
-Use `extractRouterParams`
+* For subscriptions of RxJS observables, use `takeUntil` inside `ngOnDestroy`.
+Lookup npm take until destroy.
+Use `extractRouterParams`.
 ```typescript
 class Component {
     ngUnsubscribe$ = new BehaviourSubject();
